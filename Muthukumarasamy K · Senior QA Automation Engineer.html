@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muthukumarasamy K · Senior QA Automation Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F8; --surface:#FFFFFF; --ink:#14202B; --muted:#52606D; --line:#D5DDE4; --pass:#0B7A55; --pass-bg:#DDF3EA;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F171E; --surface:#17222B; --ink:#E8EEF2; --muted:#9AA9B5; --line:#2A3945; --pass:#4FD6A0; --pass-bg:#12352A; color-scheme:dark;}
+}
+:root[data-theme="dark"]{--bg:#0F171E; --surface:#17222B; --ink:#E8EEF2; --muted:#9AA9B5; --line:#2A3945; --pass:#4FD6A0; --pass-bg:#12352A; color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--pass);outline-offset:3px}
+main{max-width:860px;margin:0 auto;padding:0 22px 72px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px}
+header.top b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+nav{display:flex;gap:18px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 36px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:700;letter-spacing:-.02em;max-width:14ch}
+.hero p{max-width:56ch;color:var(--muted);font-size:1.15rem;margin:20px 0 0}
+.run{margin-top:36px;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.run-h{display:flex;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:500;font-size:.95rem}
+.run-h span:last-child{color:var(--pass)}
+.row{display:grid;grid-template-columns:28px 1fr auto;gap:12px;align-items:baseline;padding:14px 18px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.tick{color:var(--pass);font-weight:700}
+.row small{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.row.cur .tick{animation:pop .6s .4s both}
+@keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.row.cur .tick{animation:none}}
+section{padding-top:64px}
+h2{font-size:1.7rem;margin-bottom:22px}
+.job{padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:170px 1fr;gap:6px 28px}
+.job time{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.2rem}
+.job p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.job ul{margin:10px 0 0;padding-left:20px;color:var(--muted);max-width:62ch}.job li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{background:var(--pass-bg);color:var(--pass);border-radius:999px;padding:3px 12px;font-size:.88rem;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.skill h3{font-size:1.05rem;margin-bottom:10px}
+.skill ul{margin:0;padding-left:18px;color:var(--muted)}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:26px}
+.contact p{margin:0 0 16px;color:var(--muted);max-width:52ch}
+.btn{display:inline-block;background:var(--pass);color:#fff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:500}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#06241A}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn{color:#fff}}
+footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+@media (max-width:640px){.job{grid-template-columns:1fr}.row{grid-template-columns:24px 1fr}.row small{grid-column:2}nav{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header class="top"><b>Muthukumarasamy K</b>
+<nav><a href="#work">Experience</a><a href="#skills">Skills</a><a href="#awards">Recognition</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<h1>Senior QA automation engineer.</h1>
+<p>Over ten years in software quality, about five of them designing and scaling Playwright frameworks that run in Jenkins pipelines. Experience across aviation, retail and supply chain, and I lead a team of five QA engineers.</p>
+
+<div class="run" aria-label="Selected results from the GAVS Technologies role">
+<div class="run-h"><span>Results at GAVS Technologies</span><span>All passing</span></div>
+<div class="row"><span class="tick">✓</span><span>Full regression runtime cut from 6 hours to 40 minutes</span><small>weekly releases</small></div>
+<div class="row"><span class="tick">✓</span><span>Flaky failures down from about 18% of runs to under 4%</span><small>2 sprints</small></div>
+<div class="row"><span class="tick">✓</span><span>750+ automated tests across web and API layers</span><small>built from scratch</small></div>
+<div class="row"><span class="tick">✓</span><span>220 Selenium tests migrated to Playwright, 35% faster per test</span><small>no sleep waits</small></div>
+</div>
+</div>
+
+<section id="work">
+<h2>Experience</h2>
+<div class="job"><time>Apr 2022 – present</time>
+<div><h3>Senior Software Engineer, GAVS Technologies</h3>
+<p>Projects: Frontier Airlines and Premier Healthcare.</p>
+<ul>
+<li>Designed and owns the Playwright framework in JavaScript: Page Object Model, shared fixtures, environment config and reusable helpers.</li>
+<li>Cut regression from 6 hours to 40 minutes with sharding across 8 workers on containerized browsers, so the team moved from fortnightly to weekly releases.</li>
+<li>Built a Jenkins pipeline with smoke tests on every merge, nightly regression and weekly cross-browser runs, publishing Playwright HTML and Allure reports with trace artifacts.</li>
+<li>Reduced flaky runs from about 18% to under 4% using traces, video on retry, web-first assertions and fixes to the top 20 root causes.</li>
+<li>Mentored 5 engineers through code reviews and a written coding standard: new joiner ramp-up fell from 6 weeks to 2, and first-time PR approval rose from 45% to 80%.</li>
+<li>Built a test data generator that removed about 25 false failures a week, and added database validation to 90+ tests that found 15 data-integrity defects UI checks missed.</li>
+</ul>
+<div class="tags"><span class="tag">Playwright</span><span class="tag">JavaScript</span><span class="tag">Jenkins</span><span class="tag">Allure</span><span class="tag">API testing</span></div></div></div>
+<div class="job"><time>Jul 2021 – Apr 2022</time>
+<div><h3>Software Engineer, Wipro Limited</h3>
+<p>Project: Abbott Laboratories.</p>
+<ul>
+<li>Tested a Magento-based retail application: designed and ran functional and regression cases.</li>
+<li>Tracked defects in Jira, joined triage, and did root cause analysis on client-reported tickets.</li>
+<li>Estimated testing effort in backlog refinement and sprint planning.</li>
+</ul>
+<div class="tags"><span class="tag">Functional</span><span class="tag">Regression</span><span class="tag">Jira</span></div></div></div>
+<div class="job"><time>Jul 2016 – Jul 2021</time>
+<div><h3>Software Engineer, Softeon India</h3>
+<p>Projects: Duluth, THC, W2GO, SMB UPS.</p>
+<ul>
+<li>Wrote test plans and strategies for warehouse management (WMS) releases and kept the requirement traceability matrix.</li>
+<li>Found 50+ critical defects in pre-release validation, and tested service integrations with SoapUI.</li>
+<li>Supported Go-Live and recreated production defects in QA to help developers resolve them.</li>
+</ul>
+<div class="tags"><span class="tag">WMS</span><span class="tag">ERP</span><span class="tag">SoapUI</span></div></div></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill"><h3>Automation</h3><ul><li>Playwright (@playwright/test)</li><li>Page Object Model, fixtures</li><li>JavaScript (ES2022), basic TypeScript</li></ul></div>
+<div class="skill"><h3>API and data</h3><ul><li>Playwright APIRequestContext</li><li>Postman, SoapUI</li><li>SQL, Oracle SQL Developer</li></ul></div>
+<div class="skill"><h3>Delivery</h3><ul><li>Jenkins</li><li>Agile, Scrum</li><li>Jira, Azure DevOps</li></ul></div>
+<div class="skill"><h3>Reporting</h3><ul><li>Playwright HTML Report</li><li>Trace Viewer</li><li>Allure Report</li></ul></div>
+<div class="skill"><h3>Domains</h3><ul><li>Aviation (Navitaire)</li><li>ERP, Softeon WMS</li><li>Retail (Magento)</li></ul></div>
+</div>
+</section>
+
+<section id="awards">
+<h2>Recognition</h2>
+<div class="job"><time>Q2 2026</time><div><h3>Star Team of the Quarter</h3><p>For team collaboration and delivery effectiveness.</p></div></div>
+<div class="job"><time>Q1 2025</time><div><h3>Star Member of the Quarter</h3><p>For finding the most UAT defects during a vendor transition.</p></div></div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="job"><time>May 2026</time><div><h3>MSc Computer Science</h3><p>AVC College (Autonomous), Bharathidasan University. CGPA 7.6/10.</p></div></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<p>Open to senior QA automation and lead roles. Email or call and I will get back to you.</p>
+<a class="btn" href="mailto:muthukariyappan03@gmail.com">muthukariyappan03@gmail.com</a>
+<p style="margin:16px 0 0"><a href="tel:+918220202482">+91 8220202482</a></p>
+</div>
+<footer>Muthukumarasamy K</footer>
+</section>
+</main>
+</body>
+</html>
